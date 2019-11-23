@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tic Tac Toe</title>
+  <base href="https://akpatel363.github.io/tic-tac-toe/">  <style>
+    .spinner-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner-container span {
+      border-top: 10px solid transparent;
+      border-right: 10px solid transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .spinner-container span:nth-child(1) {
+      width: 180px;
+      height: 180px;
+      border-left: 10px solid royalblue;
+      border-bottom: 10px solid royalblue;
+      animation: 1.5s loader-rotate infinite linear;
+    }
+
+    .spinner-container span:nth-child(2) {
+      width: 150px;
+      height: 150px;
+      border-left: 10px solid tomato;
+      border-bottom: 10px solid tomato;
+      animation: 1s loader-rotate infinite linear;
+    }
+
+    .spinner-container span:nth-child(3) {
+      width: 120px;
+      height: 120px;
+      border-left: 10px solid gold;
+      border-bottom: 10px solid gold;
+      animation: .5s loader-rotate infinite linear;
+    }
+
+    @keyframes loader-rotate {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#ef5350">
+<link rel="stylesheet" href="styles.8968f0301cc73cdce357.css"></head>
+
+<body>
+  <app-root>
+    <div class="spinner-container">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </app-root>
+<script src="runtime-es2015.edb2fcf2778e7bf1d426.js" type="module"></script><script src="runtime-es5.edb2fcf2778e7bf1d426.js" nomodule defer></script><script src="polyfills-es5.6696c533341b95a3d617.js" nomodule defer></script><script src="polyfills-es2015.2987770fde9daa1d8a2e.js" type="module"></script><script src="main-es2015.1a7f770ad58842a9acbd.js" type="module"></script><script src="main-es5.1a7f770ad58842a9acbd.js" nomodule defer></script></body>
+
+</html>
