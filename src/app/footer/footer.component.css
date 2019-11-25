@@ -1,0 +1,16 @@
+.footer-container{
+    max-width: 1080px;
+    margin: 0 auto !important;
+    padding-top: 6px;
+    margin-top: 50px !important;
+    border-top: 2px solid #ababab;
+    text-align: center;
+}
+a{
+    color: #ef5350;
+    text-decoration: none;
+}
+p{
+    font-size: 1.3em;
+    margin: 8px 0;
+}

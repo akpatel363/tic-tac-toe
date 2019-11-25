@@ -1,24 +1,2 @@
-<div class="container">
-  <div class="game-container">
-    <div class="box" #div1 (click)="boxClicked(div1,0,0)"></div>
-    <div class="box" #div2 (click)="boxClicked(div2,0,1)"></div>
-    <div class="box" #div3 (click)="boxClicked(div3,0,2)"></div>
-    <div class="box" #div4 (click)="boxClicked(div4,1,0)"></div>
-    <div class="box" #div5 (click)="boxClicked(div5,1,1)"></div>
-    <div class="box" #div6 (click)="boxClicked(div6,1,2)"></div>
-    <div class="box" #div7 (click)="boxClicked(div7,2,0)"></div>
-    <div class="box" #div8 (click)="boxClicked(div8,2,1)"></div>
-    <div class="box" #div9 (click)="boxClicked(div9,2,2)"></div>
-  </div>
-  <div class="status-info">
-    <a class="reset" (click)="reset()">Reset</a>
-    <h1 *ngIf="status==0">Game ongoing.</h1>
-    <h1 *ngIf="status==1">Player 1 Won.</h1>
-    <h1 *ngIf="status==2">Player 2 Won.</h1>
-    <h1 *ngIf="status==3">Game Tied.</h1>
-    <h2 *ngIf="status==0">
-      <span *ngIf="turn">Player 1's Turn.</span>
-      <span *ngIf="!turn">Player 2's Turn.</span>
-    </h2>
-  </div>
-</div>
+<app-board></app-board>
+<app-footer></app-footer>
