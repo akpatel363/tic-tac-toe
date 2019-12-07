@@ -10,6 +10,7 @@ export class BoardComponent implements OnInit {
 
   groundMatrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
   turn = true
+  wins = {'x':0,'o':0}
   status = 0
   @ViewChild('div1', { static: false }) div1: ElementRef;
   @ViewChild('div2', { static: false }) div2: ElementRef;
@@ -47,8 +48,10 @@ export class BoardComponent implements OnInit {
   checkGameStatus() {
     if (this.service.checkWinner(this.groundMatrix, 2)) {
       this.status = 2
+      this.wins.o++
     } else if (this.service.checkWinner(this.groundMatrix, 1)) {
       this.status = 1
+      this.wins.x++
     } else if (this.service.isTied(this.groundMatrix)) {
       this.status = 3
     }

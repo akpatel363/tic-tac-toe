@@ -11,6 +11,10 @@
         <div class="box" #div9 (click)="boxClicked(div9,2,2)"></div>
     </div>
     <div class="status-info">
+        <div class="scores">
+            <h2><i class="fa fa-times"></i> - {{wins.x}}</h2>
+            <h2><i class="fa fa-circle-o"></i> - {{wins.o}}</h2>
+        </div>
         <a class="reset" (click)="reset()">Reset</a>
         <h1 *ngIf="status==0">Game ongoing.</h1>
         <h1 *ngIf="status==1"><i class="fa fa-times fa-1x"></i> Won.</h1>

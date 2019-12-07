@@ -8,13 +8,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
-}
-h1{
-    text-align: center;
+    margin-top: 30px;
 }
 .status-info{
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 .box{
@@ -65,15 +62,26 @@ h1{
     border-left: 10px solid #ef5350;
     border-top: 10px solid #ef5350;
 }
+.scores{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
 a{
     cursor: pointer;
     color: white;
     border-radius: 5px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.4);
+    box-shadow: 1px 1px 8px rgba(0,0,0,.4);
     font-size: 1.6em;
     background-color: royalblue;
     line-height: 2em;
     padding: 10px 20px;
+}
+h1,h2{
+    margin: 0;
+    margin-top: 6px;
+    text-align: center;
 }
 a:focus{
     outline: none;
